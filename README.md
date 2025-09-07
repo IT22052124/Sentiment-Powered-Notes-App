@@ -1,4 +1,4 @@
-**Sentiment-Powered Notes App**
+# Sentiment-Powered Notes App
 
 A FastAPI application that allows you to store notes in PostgreSQL and analyze their sentiment using a Hugging Face model.
 Overview
