@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiment Notes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="floating-elements">
+      <div class="floating-circle"></div>
+      <div class="floating-circle"></div>
+      <div class="floating-circle"></div>
+    </div>
+
+    <div class="app-container">
+      <header class="header">
+        <h1>📝 Sentiment Notes</h1>
+        <p>Capture your thoughts and discover their sentiment</p>
+      </header>
+
+      <div class="main-content">
+        <div class="card">
+          <h2 class="card-title">
+            <span class="icon">✨</span>
+            Create Note
+          </h2>
+          <form id="noteForm">
+            <div class="form-group">
+              <label for="noteText">Your Note</label>
+              <textarea
+                id="noteText"
+                class="form-input"
+                placeholder="What's on your mind? Share your thoughts, feelings, or experiences..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn" id="submitBtn">
+              <span>✍️</span>
+              Create Note
+            </button>
+          </form>
+          <div id="message"></div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">
+            <span class="icon">📊</span>
+            Your Notes
+          </h2>
+          <button class="btn" id="refreshBtn" style="margin-bottom: 20px">
+            <span>🔄</span>
+            Refresh Notes
+          </button>
+          <div id="notesContainer">
+            <div class="loading">
+              <div class="loading-spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

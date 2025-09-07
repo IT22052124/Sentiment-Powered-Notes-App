@@ -17,3 +17,5 @@ Database: PostgreSQL
 ORM: SQLAlchemy
 NLP: Hugging Face Transformers (distilbert-base-uncased-finetuned-sst-2-english)
 Python Version: 3.11+
+
+run code uni app:app --
